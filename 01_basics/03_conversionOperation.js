@@ -17,3 +17,5 @@ let AccisLoggedIn=Number(isLoggedIn)    //bool->num gives NaN
 console.log(AccisLoggedIn);             //any type->bool gives value
 
 
+
+
