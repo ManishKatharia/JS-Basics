@@ -27,6 +27,8 @@ function add(){
     
 //}
 
+// when parameters r known
+
 function addTwoNum(n1,n2){
     let result=n1+n2;
     return result    
@@ -51,4 +53,51 @@ function userlogin(name ="manish" ){
     return `welcome ${name}`
 
 }
-console.log(userlogin());
+//console.log(userlogin());
+
+// when parameters are unknown
+
+function cartPrice(...num1){
+    return num1
+
+}
+//console.log(cartPrice(200,2000,200000));
+
+// Handling objects in JS
+
+const users={
+    name:"manish",
+    age:21
+}
+
+function handleObject(anyobject){
+    console.log(`My name is ${anyobject.name} and my age is ${anyobject.age}`);    
+} 
+//handleObject(users)
+
+
+const Order={
+    orderId:21,
+    item:"burger"
+}
+function handleOrders(burgers){
+    console.log(`My order ID is  ${burgers.orderId} and my item name is ${burgers.item}`);    
+} 
+//handleOrders()
+handleOrders({
+    orderId:22,
+    item:"fries"
+})
+
+
+//handling arrays in JS
+
+
+const items=["burger","fries","momos"]   
+
+function getItems(fastFood){
+    return fastFood[1]
+}
+console.log(getItems(items));
+
+

@@ -12,5 +12,5 @@ console.table([accountName,accountAge,isLoggedIn,accountCity])
 
 console.log(typeof "manish")
 console.log(typeof null)        //null is a object
-console.log(typeof age)         
+console.log(typeof 21)         
 console.log(typeof undefined)   //undefined is a special case i.e. undefined
