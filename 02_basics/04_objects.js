@@ -60,5 +60,24 @@ const course={
 
 const{tutor}=course
 
-console.log(tutor);
+//console.log(tutor);
+
+const users=[
+    {
+
+    id:1,
+    email:"abc@gamil.com"
+},
+{
+
+    id:2,
+    email:"qwerty@gmail.com"
+},
+{
+
+    id:3,
+    email:"mani@123.com"
+}
+]
+ console.log(users[1].email);
 
