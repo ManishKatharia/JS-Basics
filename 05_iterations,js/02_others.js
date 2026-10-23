@@ -37,3 +37,14 @@ for (const [key,value] of map) {                        // Taking both key-value
  console.log(key ,':-', value);
     
 }
+// forof loop in object
+
+const myObject={
+  "game1":"BGMI",
+  "game2":"freefire",
+  "game1":"mini militia"
+}
+//for (const [key,value] of myObject) {
+  console.log([key,value]);                 // Incorrect way of initializing object
+  
+//}
