@@ -1,4 +1,4 @@
-// filter map
+// filter 
 
 const num=[1,2,3,4,5,6,7,8,9,10]
 
@@ -43,6 +43,21 @@ const books = [
 let myBook=books.filter( (book)=>{
    return book.publish>'2000'&& book.genre==='Science'
 })
-console.log(myBook);
+//console.log(myBook);
+
+
+// map
+
+const number=[1,2,3,4,5]                                    // normal mapping
+//const newNumbers=number.map( (num)=>{
+//   return num+10
+//})
+//console.log(newNumbers);
+
+const newNumb=number.map((nb)=>{return nb*20})              // nested mapping
+                    .map((no)=>{return no+20})
+                    .filter((no)=>{return no>50})
+console.log(newNumb);
+
 
 
