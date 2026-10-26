@@ -2,8 +2,8 @@
 
 const lang=["java" ,"python", "javascript"]
 
-lang.forEach(value => {
-   // console.log(` i am good at ${value}`);
+lang.forEach((value) => {
+   console.log(` i am good at ${value}`);
     
 });
 
@@ -27,6 +27,6 @@ const arr=[
     }
 ]
 arr.forEach( (item)=>{
-    console.log(`I can teach ${item.lang} at just ${item.price}`);
+   // console.log(`I can teach ${item.lang} at just ${item.price}`);
     
 })
