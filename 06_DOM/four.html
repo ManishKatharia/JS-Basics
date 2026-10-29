@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: black;color: red;" >
+    <ul class="language">
+        <li class="list">javascript</li>
+    </ul>
+</body>
+
+<script>
+
+// traditional approach 
+
+    function addLanguage(newLang) {                         // function for adding new lang
+        const li=document.createElement("li")
+        li.innerHTML=`${newLang}`
+        document.querySelector('.language').appendChild(li) // jaha add krna h waha ki loc select krke jo add krna h add kro
+    }
+    addLanguage("react")
+    addLanguage("c++")
+    addLanguage("java")
+
+// optimized approach
+
+    function optiLanguage(lang){
+        const li=document.createElement('li')
+        li.append(document.createTextNode(lang))
+        document.querySelector('.language').appendChild(li)
+    }
+    optiLanguage("css")
+
+    // editing the list
+
+    const lang=document.querySelector("li:nth-child(2)")
+    // lang.innerHTML="hbh"                                // not a good approach 
+
+    // create element -> hold in a variable -> add textnode -> doc.appendchild
+
+    const newLi=document.createElement('li')
+    newLi.textContent="manni"
+   // li.append(document.createTextNode("manish"))
+   // document.querySelector[3]('.language').replaceWith(li)
+   lang.replaceWith(newLi)                                                     // replaces the value with the given index
+
+   //removing an element
+    const lastOne=document.querySelector("li:last-child")
+    lastOne.remove()
+   
+</script>
+</html>
