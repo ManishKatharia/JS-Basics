@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML document</title>
+</head>
+<body style="background-color: black;color: yellowgreen;">
+    
+</body>
+<script>
+    const div=document.createElement('div')
+    console.log(div);
+    div.style.background="yellow"
+    div.style.color="black"
+    div.className="class"
+    div.id="form"
+    div.setAttribute("title","registration form")
+    div.style.padding="20px"
+
+// createTextNode is used to create a text node where text can be inserted
+    const myText=document.createTextNode('hello to my program')
+    div.append(myText)
+
+    document.body.appendChild(div)
+
+    const nextText=document.createTextNode("My name is Manish")
+    div.append(nextText)
+
+    document.body.appendChild(div)
+
+</script>
+</html>
